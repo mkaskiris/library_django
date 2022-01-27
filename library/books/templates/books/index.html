@@ -1,0 +1,10 @@
+{% extends "books/base.html" %}
+
+{% block content %}
+<h2>Here are all the books in the library!</h2>
+<ul>
+    {% for book in books %} 
+        <li>{{ book.title }}</li> 
+    {% endfor %}
+</ul>
+{% endblock content %}
